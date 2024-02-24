@@ -1,3 +1,11 @@
+:root {
+  --main-color-text: rgb(255, 255, 255);
+  --border-color-input: rgb(255, 255, 255);
+  --text-accent: rgb(84, 80, 80);
+  --current-card-bg: #545050;
+  --button-active-bg: rgb(84, 80, 80);
+}
+
 *,
 *::before,
 *::after {
@@ -52,14 +60,6 @@ fieldset {
 ul,
 ol {
   list-style: none;
-}
-
-:root {
-  --main-color-text: rgb(255, 255, 255);
-  --border-color-input: rgb(255, 255, 255);
-  --text-accent: rgb(84, 80, 80);
-  --current-card-bg: #545050;
-  --button-active-bg: rgb(84, 80, 80);
 }
 
 .content {
@@ -169,7 +169,7 @@ ol {
   transition: background-color .3s ease-in-out;
 }
 
-.content__card-link:focus-visible { 
+.content__card-link:focus-visible {
   border-color: #fff;
   outline: none;
 }
@@ -195,7 +195,8 @@ ol {
 
 .button {
   width: 100%;
-  height: 34px;
+  padding-top: 7px;
+  padding-bottom: 7px;
   border: 1px solid #fff;
   outline: double transparent;
   color: var(--main-color-text);
@@ -309,7 +310,7 @@ ol {
   text-decoration-color: #fff;
 }
 
-input[type='checkbox']:checked+.search-form__pseudo-checkbox::after {
+.search-form__checkbox[type='checkbox']:checked+.search-form__pseudo-checkbox::after {
   content: '';
   position: relative;
   top: 1px;
@@ -320,7 +321,7 @@ input[type='checkbox']:checked+.search-form__pseudo-checkbox::after {
   background-color: #fff;
 }
 
-input[type='checkbox']:active+.search-form__pseudo-checkbox::after {
+.search-form__checkbox[type='checkbox']:active+.search-form__pseudo-checkbox::after {
   content: '';
   position: relative;
   top: 1px;
