@@ -117,12 +117,14 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   min-width: 400px;
   height: 310px;
   padding-top: 12px;
-  overflow-x: hidden;
   overflow-y: auto;
+}
+
+.content__list-item:not(:last-child) {
+  margin-bottom: 33px;
 }
 
 .content__list::-webkit-scrollbar {
@@ -242,7 +244,7 @@ ol {
 
 .button:focus-visible {
   border-color: transparent;
-  outline-color:#fff;
+  outline-color: #fff;
   outline-offset: -2px;
 }
 
